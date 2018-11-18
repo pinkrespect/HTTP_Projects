@@ -13,6 +13,6 @@ export default {
 
 <style scoped>
 H2 {
-  font-style: bold;
+  font-style: underline;
 }
 </style>
