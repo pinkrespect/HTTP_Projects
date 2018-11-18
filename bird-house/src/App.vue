@@ -1,23 +1,26 @@
 <template>
-  <div id="app">
+  <div id="DivBox">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld/>
+    <TEST/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import TEST from './components/TEST.vue'
 
 export default {
-  name: 'app',
   components: {
-    HelloWorld
+    'HelloWorld': HelloWorld,
+    'TEST': TEST
   }
 }
+
 </script>
 
 <style>
-#app {
+#DivBox {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
