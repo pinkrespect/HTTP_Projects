@@ -1,6 +1,7 @@
 <template>
   <div id="DivBox">
     <img alt="Vue logo" src="./assets/logo.png">
+    <MenuBar/>
     <HelloWorld/>
     <TEST/>
   </div>
@@ -9,16 +10,36 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import TEST from './components/TEST.vue'
+import MenuBar from './components/MenuBar.vue'
 
 export default {
   components: {
     'HelloWorld': HelloWorld,
-    'TEST': TEST
+    'TEST': TEST,
+    'MenuBar': MenuBar
   }
 }
 </script>
 
 <style>
+
+body {
+  margin: 0;
+  background-image: url("./assets/IMG_VER.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+@media screen and (min-aspect-ratio:1/1) {
+  body {
+    background-image: url("./assets/IMG_HO.jpeg");
+    width: 100vw;
+  }
+}
+
 #DivBox {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

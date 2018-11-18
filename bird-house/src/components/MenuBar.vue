@@ -1,10 +1,10 @@
 <template>
-  <H1> Hello, World! </H1>
+  <div id="MenuBar"> Menu Bar </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'MenuBar',
   props: {
     msg: String
   }
@@ -12,8 +12,7 @@ export default {
 </script>
 
 <style scoped>
-H1 {
-  font-style: italic;
+#MenuBar {
+  background: black;
 }
-
 </style>
