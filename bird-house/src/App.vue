@@ -1,6 +1,6 @@
 <template>
   <div id="DivBox">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <img id="Main" alt="Vue logo" src="./assets/logo.png">
     <MenuBar/>
     <HelloWorld/>
     <TEST/>
