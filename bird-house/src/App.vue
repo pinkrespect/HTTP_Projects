@@ -1,9 +1,9 @@
 <template>
   <div id="DivBox">
     <img id="Main" alt="Vue logo" src="./assets/logo.png">
-    <MenuBar/>
-    <HelloWorld/>
-    <TEST/>
+      <MenuBar/>
+      <HelloWorld/>
+      <TEST/>
   </div>
 </template>
 
@@ -14,9 +14,9 @@ import MenuBar from './components/MenuBar.vue'
 
 export default {
   components: {
-    'HelloWorld': HelloWorld,
-    'TEST': TEST,
-    'MenuBar': MenuBar
+    HelloWorld,
+    TEST,
+    MenuBar
   }
 }
 </script>
