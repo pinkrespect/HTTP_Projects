@@ -29,7 +29,6 @@ body {
   background-position: center;
   background-size: cover;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.9);
   text-align: center;
 }
 
