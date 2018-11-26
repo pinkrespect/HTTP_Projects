@@ -1,27 +1,16 @@
 <template>
   <div id="Index">
     <router-link to="/Main"><img src="Index.jpeg"></router-link>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Vue from 'vue'
-import Router from 'vue-router'
-
-Vue.use(Router)
-
-const Main = { template: '<div>Main</div>' }
-
-const routes = {
-  path: '/Main', component: Main
+export default {
+  name: 'Index',
+  props: {
+    name: String
+  }
 }
-
-const router = new Router({
-  routes
-})
-
-const app = new Vue({
-  router
-}).$mount('#Index')
 
 </script>
