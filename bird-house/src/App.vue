@@ -1,7 +1,7 @@
 <template>
   <div id="DivBox">
     <img id="Main" alt="Vue logo" src="./assets/logo.png">
-      <MenuBar/>
+      <Index/>
       <HelloWorld/>
       <TEST/>
   </div>
@@ -10,13 +10,13 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import TEST from './components/TEST.vue'
-import MenuBar from './components/MenuBar.vue'
+import Index from './components/Index.vue'
 
 export default {
   components: {
     HelloWorld,
     TEST,
-    MenuBar
+    Index
   }
 }
 </script>
