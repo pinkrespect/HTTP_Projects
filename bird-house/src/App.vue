@@ -1,25 +1,13 @@
 <template>
-  <div id="DivBox">
-    <img id="Main" alt="Vue logo" src="./assets/logo.png">
-      <Index/>
-      <HelloWorld/>
-      <TEST/>
+  <div id="app">
+    <router-view/>
+    <div id="nav">
+      <router-link to="/">Index</router-link> |
+      <router-link to="/home">Home</router-link> |
+      <router-link to="/about">Hello</router-link>
+    </div>
   </div>
 </template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-import TEST from './components/TEST.vue'
-import Index from './components/Index.vue'
-
-export default {
-  components: {
-    HelloWorld,
-    TEST,
-    Index
-  }
-}
-</script>
 
 <style>
 
@@ -39,6 +27,9 @@ body {
   }
 }
 
+H1 {
+  font-style: italic;
+}
 #DivBox {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -10,10 +10,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-H1 {
-  font-style: italic;
-}
-
-</style>
