@@ -21,6 +21,11 @@ export default new Router({
       path: '/about',
       name: 'about',
       component: () => import('./views/About.vue')
+    },
+    {
+      path: '/upload',
+      name: 'upload',
+      component: () => import('./views/Upload.vue')
     }
   ]
 })

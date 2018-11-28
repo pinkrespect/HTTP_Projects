@@ -4,7 +4,8 @@
     <div id="nav">
       <router-link to="/">Index</router-link> |
       <router-link to="/home">Home</router-link> |
-      <router-link to="/about">Hello</router-link>
+      <router-link to="/about">Hello</router-link> |
+      <router-link to="/upload">Upload</router-link>
     </div>
   </div>
 </template>
