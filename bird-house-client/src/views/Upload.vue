@@ -37,7 +37,7 @@ import ListItem from './components/ListItem.vue';
     ListItem
   }
 })
-export default class App extends Vue {
+export default class Upload extends Vue {
   private files: File[] = [];
   private uploadProgress: { [key: string]: { state: string; percentage: number } } = {};
   private uploading = false;
