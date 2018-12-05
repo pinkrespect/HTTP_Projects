@@ -1,23 +1,24 @@
-import {UserController} from "./controller/UserController";
+import {postGetAction} from "./controller/PostGetAction";
+import {postGetByIdAction} from "./controller/PostGetByIdAction";
+import {postSaveAction} from "./controller/PostSaveAction";
 
-export const Routes = [{
-    method: "get",
-    route: "/users",
-    controller: UserController,
-    action: "all"
-}, {
-    method: "get",
-    route: "/users/:id",
-    controller: UserController,
-    action: "one"
-}, {
-    method: "post",
-    route: "/users",
-    controller: UserController,
-    action: "save"
-}, {
-    method: "delete",
-    route: "/users",
-    controller: UserController,
-    action: "remove"
-}];
+/**
+ * All application routes.
+ */
+export const AppRoutes = [
+    {
+        path: "/posts",
+        method: "get",
+        action: postGetAction
+    },
+    {
+        path: "/posts/:id",
+        method: "get",
+        action: postGetByIdAction
+    },
+    {
+        path: "/posts",
+        method: "post",
+action: postSaveAction
+    }
+];
