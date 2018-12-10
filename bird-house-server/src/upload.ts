@@ -1,12 +1,15 @@
 import { IncomingForm } from 'formidable';
 import { Request, Response } from 'express';
 
+const fs = require('fs')
+
 export function upload(req: Request, res: Response) {
   const form = new IncomingForm();
   form.on('file', (field, file) => {
-    // Do something with the file
-    // e.g. save it to the database
-    // you can access it using file.path
+    fs.writeFile(file.name, file, 'binary', 
+      console.log('File Saved')
+      )
+
     console.log('file', file.name);
   });
   form.on('end', () => {
